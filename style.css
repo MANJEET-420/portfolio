@@ -1,0 +1,109 @@
+:root {
+    --bg-dark: #070b14;
+    --card-bg: rgba(15, 23, 42, 0.72);
+    --cyan: #22d3ee;
+    --purple: #a855f7;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.font-display {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Background Neural Canvas */
+#neural-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Glassmorphism Cards */
+.glass {
+    background: var(--card-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.glass-hover:hover {
+    border-color: rgba(34, 211, 238, 0.45);
+    box-shadow: 0 12px 35px -10px rgba(34, 211, 238, 0.18);
+    transform: translateY(-3px);
+}
+
+/* Terminal Command Pills */
+.cmd-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 6px;
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #cbd5e1;
+    transition: all 0.2s ease;
+}
+
+.cmd-pill:hover {
+    border-color: #22d3ee;
+    color: #22d3ee;
+}
+
+/* Sandbox Tabs */
+.sandbox-tab {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #94a3b8;
+    transition: all 0.2s ease;
+}
+
+.sandbox-tab.active-tab {
+    background: rgba(34, 211, 238, 0.14);
+    border-color: rgba(34, 211, 238, 0.6);
+    color: #67e8f9;
+    font-weight: 600;
+}
+
+/* Tech Stack Badges */
+.tech-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: rgba(30, 41, 59, 0.75);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    color: #e2e8f0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #070b14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #22d3ee;
+}
